@@ -17,7 +17,6 @@ const profile=require("./routes/api/profile.js");
 // connect database
 
 const db=require('./setup/myurl').url;
-//var url="mongodb+srv://Shubham1:mla13003773%40ram@cluster0-osjv4.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(db, {useNewUrlParser: true})
 .then(() => console.log("MongoDB connected successfully"))
 .catch(err => console.log(err));;
